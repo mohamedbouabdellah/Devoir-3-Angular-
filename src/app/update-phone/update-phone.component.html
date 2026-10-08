@@ -1,0 +1,35 @@
+<div class="container">
+    <div>
+      <h2>Modifier un phone :</h2>             
+    </div>
+         <form >         
+             <div  class="col-sm-2 col-md-2 col-lg-2">
+               <label >ID  phone</label>
+               <input  readonly  type="text"  [(ngModel)]="currentphone.idphone"  
+                   name="idphone" class="form-control">
+              </div>
+         
+             <div class="col-sm-4 col-md-4 col-lg-4" >
+               <label >Nom phone</label>
+               <input  type="text"[(ngModel)]= "currentphone.nomphone"  
+                   name="nomphone" class="form-control">
+             </div>
+
+             <div class="col-sm-2 col-md-2 col-lg-2">
+               <label >Prix phone</label>
+           <input type="number"   [(ngModel)]= "currentphone.prixphone"  
+                   name="prixphone" class="form-control">
+             </div>
+
+             <div class="col-sm-4 col-md-4 col-lg-4">
+                 <label >Date création</label>
+    <input  type="date"  [ngModel]="currentphone.dateCreation | date: 'yyyy-MM-dd'" 
+    (ngModelChange)=" currentphone.dateCreation= $event"   name="dateCreation" 
+    class="form-control">
+             </div>
+             
+              <div class="mt-2">
+<button type="submit"  (click)="updatephone()" class="btn btn-success">Modifer</button>
+              </div>  
+         </form>
+</div>       

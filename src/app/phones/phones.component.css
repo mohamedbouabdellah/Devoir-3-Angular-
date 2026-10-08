@@ -1,0 +1,32 @@
+.phone-list-container {
+  max-width: 1620px;
+  margin: 32px auto;
+}
+
+.phone-table {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.phone-table th {
+  white-space: nowrap;
+}
+
+.phone-table td {
+  padding: 10px;
+}
+
+.phone-count-row td {
+  background: #fff;
+  border-bottom: 0;
+  padding: 0 10px 8px;
+}
+
+.phone-count-row h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.phone-table .btn {
+  min-width: 108px;
+}
