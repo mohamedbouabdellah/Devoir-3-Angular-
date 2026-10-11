@@ -10,6 +10,7 @@
               <th>Nom</th>
               <th>Prix</th>
               <th>Date Création</th>
+              <th>Marque</th>
             </tr>
           </thead>
 
@@ -26,6 +27,7 @@
                <td>{{phone.nomphone}}</td>
                <td>{{phone.prixphone}}</td>
                <td>{{phone.dateCreation | date:'dd/MM/yyyy'}}</td>
+               <td>{{phone.marque?.nommarque}}</td>
                <td><a class="btn btn-danger" (click)="supprimerphone(phone)">Supprimer</a></td> 
                <td><a class="btn btn-success" [routerLink]="['/updatephone',phone.idphone]">Modifier</a></td>
              </tr>                                    

@@ -29,6 +29,4 @@ export class phonesComponent implements OnInit  {
        this.phoneservice.supprimerphone(p);
    }
 
-    
-
 }
